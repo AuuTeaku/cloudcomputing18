@@ -27,11 +27,11 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
  6. buatlah file script bernama bootstrap.sh, isilah script sesuai yang dibutuhkan<br>
  7. tambahkan config pada Vagrantfile sehingga menjadi seperti berikut:<br><br>
       <b>config.vm.provision "shell", path: "bootstrap.sh"</b><br>
-      <b>end<b>
+      <b>end</b>
       <br>
       <br>
       
-      <h2>MENJAWAB PERTANYAAN</h2><br>
+# MENJAWAB PERTANYAAN<br>
 1. Buat vagrant virtualbox dan buat user 'awan' dengan password 'buayakecil'.<br>
 <b>JAWABAN</b><br>
 	a. tambahkan script pada bootsrap.sh untuk menambahkan user 'awan' dan password 'buayakecil' seperti berikut:<br><br>
@@ -41,24 +41,24 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	c. reload script bootsrap.sh dengan perintah sebagai berikut:<br><br>
 		<b>vagrant reload –provision</b><br>
 	hasilnya sebagai berikut:<br>
-	![1](/images/1c.jpg)
-	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:
-		vagrant ssh
-	e. untuk login masukkan perintah su awan dan masukkan password: buayakecil, seperti berikut:
- 
-2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework 
-	Untuk menginstall Phoenix Web Framework, kita perlu menginstall beberapa hal terlebih dahulu :
-	a. Elixir 1.4 atau setelahnya
-		Phoenix ditulis di Elixir. Sebelum menginstall elixir, kita perlu menginstall Hex. Hex adalah dependency yang akan 			dibutuhkan dalam Phoenix.
-	Command untuk menginstall Hex adalah sebagai berikut :
-		Mix local.hex
-	Setelah itu, install Erlang untuk mendapatkan semua paket. Command nya adalah sebagai berikut :
-	wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
-	sudo apt-get install -y esl-erlang
-sudo apt-get install -y elixir
-
-	b. Setelah berhasil menginstall elixir, untuk memastikan elixir telah terinstall maka silahkan masuk ke virtual machine (vagrant 		ssh) dan ketik command berikut :
-		Elixir -v
+	![1](/images/1c.JPG)
+	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:<br><br>
+		<b>vagrant ssh</b>
+	e. untuk login masukkan perintah su awan dan masukkan <br>
+	<br>password: buayakecil, seperti berikut:
+ 	![2](/images/1e.JPG)
+<br>2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework <br>
+	Untuk menginstall Phoenix Web Framework, kita perlu menginstall beberapa hal terlebih dahulu :<br><br>
+	a. Elixir 1.4 atau setelahnya<br>
+	Phoenix ditulis di Elixir. Sebelum menginstall elixir, kita perlu menginstall Hex. Hex adalah dependency yang akan 		dibutuhkan dalam Phoenix.<br>
+	Command untuk menginstall Hex adalah sebagai berikut :<br><br>
+		<b>Mix local.hex</b><br>
+	Setelah itu, install Erlang untuk mendapatkan semua paket. Command nya adalah sebagai berikut :<br><br>
+	<b>wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb</b><br>
+	<b>sudo apt-get install -y esl-erlang</b><br>
+	<b>sudo apt-get install -y elixir</b><br>
+	b. Setelah berhasil menginstall elixir, untuk memastikan elixir telah terinstall maka silahkan masuk ke virtual machine <b>(vagrant ssh)</b> dan ketik command berikut :<br><br>
+		<b>Elixir -v</b><br>
 	Akan muncul output seperti gambar berikut :
  	c. akhirnya kita akan menginstall phoenix. Untuk menginstall phoenix, ketikkan command berikut :
 		mix archive.install https://github.com/phoenixframework/archieves/raw/master/phx_new.ez
