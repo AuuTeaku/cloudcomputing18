@@ -41,7 +41,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	c. reload script bootsrap.sh dengan perintah sebagai berikut:<br><br>
 		<b>vagrant reload –provision</b><br><br>
 	hasilnya sebagai berikut:<br>
-	![1](/image/1c.JPG) <br>
+	![1](/image/1c.jpg) <br>
 	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:<br><br>
 		<b>vagrant ssh</b><br>
 	e. untuk login masukkan perintah su awan dan masukkan <br>
@@ -84,9 +84,9 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 4. Buat vagrant virtualbox dan lakukan provisioning install:<br>
   a. Squid proxy<br>
 	untuk install squid proxy, ketik command berikut :<br>
-	<b>sudo apt-get install -y squid</b>
+	<b>sudo apt-get install -y squid</b><br><br>
   b. Bind9<br>
 	unutk menginstall bind9, ketik command berikut :<br>
-	<b>sudo apt-get install -y bind9</b>
+	<b>sudo apt-get install -y bind9</b><br><br>
 	hasilnya adalah sebagai berikut :
  	![6](/image/4b.JPG)
