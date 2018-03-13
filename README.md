@@ -1,47 +1,47 @@
 # cloudcomputing18
 
 Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut langkah-langkahnya:
-1. membuat folder bernama minion dengan script sebagai berikut:
-    mkdir minion
-2. masuk ke dalam folder minion, dengan script sebagai berikut:
-    cd minion
-3. inisialisasi vagrant, dengan script sebagai berikut:
-    vagrant init
-   akan terdapat file Vagrantfile
-4. download virtual box dengan script sebagai berikut:
-    vagrant box add hashicorp/precise64
-   pilih point ke 2 yaitu virtual box dan tunggu hingga proses selesai.
-5. config Vagrantfile sebagai berikut:
+1. membuat folder bernama minion dengan script sebagai berikut:<br><br>
+    <b>mkdir minion</b>
+2. masuk ke dalam folder minion, dengan script sebagai berikut:<br><br>
+    <b>cd minion</b>
+3. inisialisasi vagrant, dengan script sebagai berikut:<br><br>
+    <b>vagrant init</b>
+   <br>akan terdapat file Vagrantfile
+4. download virtual box dengan script sebagai berikut:<br><br>
+    <b>vagrant box add hashicorp/precise64</b>
+   <br>pilih 2 untuk install virtual box dan tunggu hingga proses selesai.
+5. config Vagrantfile sebagai berikut:<br>
     a. ganti
-        config.vm.box = "base"
-       menjadi
-        config.vm.box = "hashicorp/precise64"
-    b. ganti bagian Vagrantfile menjadi script dibawah ini untuk menentukan resource memori dan mengatur core cpu:
-          config.vm.provider "virtualbox" do |vb|
-        # Display the VirtualBox GUI when booting the machine
-        # vb.gui = true
-        # Customize the amount of memory on the VM:
- 	        vb.memory = "1024"
- 	        vb.cpus = 2 
-          end
- 6. buatlah file script bernama bootstrap.sh, isilah script sesuai yang dibutuhkan
- 7. tambahkan config pada Vagrantfile sehingga menjadi seperti berikut:
-      config.vm.provision "shell", path: "bootstrap.sh"
-      end
+        <b>config.vm.box = "base"</b><br>
+       menjadi<br>
+        <b>config.vm.box = "hashicorp/precise64"</b><br><br>
+    b. ganti bagian Vagrantfile menjadi script dibawah ini untuk menentukan resource memori dan mengatur core cpu:<br><br>
+          <b>config.vm.provider "virtualbox" do |vb|</b> //diuncomment<br>
+        <b># Display the VirtualBox GUI when booting the machine</b><br>
+        <b># vb.gui = true</b><br>
+        <b># Customize the amount of memory on the VM:</b><br>
+ 	        <b>vb.memory = "1024"</b>   //diuncomment<br>
+ 	        <b>vb.cpus = 2</b>  //diuncomment<br>
+          <b>end</b> //diuncomment<br>
+ 6. buatlah file script bernama bootstrap.sh, isilah script sesuai yang dibutuhkan<br>
+ 7. tambahkan config pada Vagrantfile sehingga menjadi seperti berikut:<br><br>
+      <b>config.vm.provision "shell", path: "bootstrap.sh"</b><br>
+      <b>end<b>
+      <br>
+      <br>
       
-      
-      
-      MENJAWAB PERTANYAAN   
-1. Buat vagrant virtualbox dan buat user 'awan' dengan password 'buayakecil'.
-JAWABAN
-	a. tambahkan script pada bootsrap.sh untuk menambahkan user 'awan' dan password 'buayakecil' seperti berikut:
-    		useradd awan -p $(echo buayakecil | openssl passwd -1 -stdin)
-	b. jangan lupa untuk menyalakan vagrant dengan perintah sebagai berikut:
-		vagrant up
-	c. reload script bootsrap.sh dengan perintah sebagai berikut:
-		vagrant reload –provision
-	hasilnya sebagai berikut:
-	![hasil reload](/images/tang.jpg)
+      <h2>MENJAWAB PERTANYAAN</h2><br>
+1. Buat vagrant virtualbox dan buat user 'awan' dengan password 'buayakecil'.<br>
+<b>JAWABAN</b><br>
+	a. tambahkan script pada bootsrap.sh untuk menambahkan user 'awan' dan password 'buayakecil' seperti berikut:<br><br>
+    		<b>useradd awan -p $(echo buayakecil | openssl passwd -1 -stdin)</b><br>
+	b. jangan lupa untuk menyalakan vagrant dengan perintah sebagai berikut:<br><br>
+		<b>vagrant up</b><br>
+	c. reload script bootsrap.sh dengan perintah sebagai berikut:<br><br>
+		<b>vagrant reload –provision</b><br>
+	hasilnya sebagai berikut:<br>
+	![1](/images/1c.jpg)
 	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:
 		vagrant ssh
 	e. untuk login masukkan perintah su awan dan masukkan password: buayakecil, seperti berikut:
