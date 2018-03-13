@@ -46,7 +46,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 		<b>vagrant ssh</b><br>
 	e. untuk login masukkan perintah su awan dan masukkan <br>
 	<br>password: buayakecil, seperti berikut:
- 	![2](/image/1e.JPG) <br>
+ 	![2](/image/1e.jpg) <br>
 <br>2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework <br>
 	Untuk menginstall Phoenix Web Framework, kita perlu menginstall beberapa hal terlebih dahulu :<br><br>
 	a. Elixir 1.4 atau setelahnya<br>
@@ -55,14 +55,14 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 		<b>Mix local.hex</b><br><br>
 	Setelah itu, install Erlang untuk mendapatkan semua paket. Command nya adalah sebagai berikut :<br><br>
 	<b>wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb</b><br>
-	![3](/image/2b.JPG) <br>
+	![3](/image/2b.jpg) <br>
 	<b>sudo apt-get install -y esl-erlang</b><br>
 	<b>sudo apt-get install -y elixir</b><br><br>
 	b. Setelah berhasil menginstall elixir, untuk memastikan elixir telah terinstall maka silahkan masuk ke virtual machine <b>(vagrant ssh)</b> dan ketik command berikut :<br><br>
 		<b>Elixir -v</b><br>
-	Akan muncul output seperti gambar berikut :
- 	c. akhirnya kita akan menginstall phoenix. Untuk menginstall phoenix, ketikkan command berikut :
-		mix archive.install https://github.com/phoenixframework/archieves/raw/master/phx_new.ez
+	Akan muncul output seperti gambar berikut :<br>
+ 	c. akhirnya kita akan menginstall phoenix. Untuk menginstall phoenix, ketikkan command berikut :<br><br>
+		<b>mix archive.install https://github.com/phoenixframework/archieves/raw/master/phx_new.ez</b><br>
  	![4](/image/2c.JPG) <br>
 3. Buat vagrant virtualbox dan lakukan provisioning install:<br>
 <b>  a. php</b><br>
@@ -75,10 +75,10 @@ untuk menginstall php, cukup mengetikkan command dibawah ini :<br><br>
 	sudo php composer-setup.php –install- dir=/usr/local/bin –filename=composer<br>
 	curl -sS https://getcomposer.org/installer | php</b><br><br>
   d. nginx<br>
-untuk menginstall php, cukup mengetikkan command dibawah ini :<br>
-	<b>sudo apt-get install -y nginx</b>
+untuk menginstall php, cukup mengetikkan command dibawah ini :<br><br>
+	<b>sudo apt-get install -y nginx</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
-	![5](/image/3d.JPG)
+	![5](/image/3d.jpg)<br>
 setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-laravel.git pada folder yang sama dengan vagrantfile di   komputer host. Setelah itu sinkronisasi folder pelatihan-laravel host ke vagrant ke /var/www/web dan jangan lupa install vendor laravel agar dapat dijalankan. Setelah itu setting root document nginx ke /var/www/web. webserver VM harus dapat diakses pada port 8080 komputer host dan mysql pada vm dapat diakses pada port 6969 komputer host<br><br>
 
 4. Buat vagrant virtualbox dan lakukan provisioning install:<br>
@@ -88,5 +88,5 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
   b. Bind9<br>
 	unutk menginstall bind9, ketik command berikut :<br>
 	<b>sudo apt-get install -y bind9</b><br><br>
-	hasilnya adalah sebagai berikut :
- 	![6](/image/4b.JPG)
+	hasilnya adalah sebagai berikut :<br>
+ 	![6](/image/4b.jpg)
