@@ -89,4 +89,4 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 	unutk menginstall bind9, ketik command berikut :<br>
 	<b>sudo apt-get install -y bind9</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
- 	![6](/image/4b.jpg)
+ 	![6](/image/4a.jpg)
