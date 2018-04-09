@@ -41,7 +41,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	c. reload script bootsrap.sh dengan perintah sebagai berikut:<br><br>
 		<b>vagrant reload –provision</b><br><br>
 	hasilnya sebagai berikut:<br>
-	![1](/TUGAS1/images/1c.jpg) <br>
+	![1](/TUGAS1/images/1c.JPG) <br>
 	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:<br><br>
 		<b>vagrant ssh</b><br>
 	e. untuk login masukkan perintah su awan dan masukkan <br>
