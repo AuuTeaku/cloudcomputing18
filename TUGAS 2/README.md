@@ -12,6 +12,6 @@ Soal :
 - Untuk nomor 2 dan 3 merupakan analisa terhadap suatu masalah, jawablah pertanyaan diatas dan tulis pada laporan.
 
 ## RESULT :
-1. No [1](/satu)
-1. No [2](/dua)
-1. No [3](/tiga)
+1. No [1](satu)
+1. No [2](dua)
+1. No [3](tiga)
