@@ -41,12 +41,12 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	c. reload script bootsrap.sh dengan perintah sebagai berikut:<br><br>
 		<b>vagrant reload –provision</b><br><br>
 	hasilnya sebagai berikut:<br>
-	![1](/image/1c.jpg) <br>
+	![1](/TUGAS 1/images/1c.jpg) <br>
 	d. untuk mengecek, masuk vagrant dengan perintah sebagai berikut:<br><br>
 		<b>vagrant ssh</b><br>
 	e. untuk login masukkan perintah su awan dan masukkan <br>
 	<br>password: buayakecil, seperti berikut:
- 	![2](/image/1e.jpg) <br>
+ 	![2](/TUGAS 1/images/1e.jpg) <br>
 <br>2. Buat vagrant virtualbox dan lakukan provisioning install Phoenix Web Framework <br>
 	Untuk menginstall Phoenix Web Framework, kita perlu menginstall beberapa hal terlebih dahulu :<br><br>
 	a. Elixir 1.4 atau setelahnya<br>
@@ -63,7 +63,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	Akan muncul output seperti gambar berikut :<br>
  	c. akhirnya kita akan menginstall phoenix. Untuk menginstall phoenix, ketikkan command berikut :<br><br>
 		<b>mix archive.install https://github.com/phoenixframework/archieves/raw/master/phx_new.ez</b><br>
- 	![4](/image/2c.JPG) <br>
+ 	![4](/TUGAS 1/images/2c.JPG) <br>
 3. Buat vagrant virtualbox dan lakukan provisioning install:<br>
 <b>  a. php</b><br>
 untuk menginstall php, cukup mengetikkan command dibawah ini :<br>
@@ -78,7 +78,7 @@ untuk menginstall php, cukup mengetikkan command dibawah ini :<br><br>
 untuk menginstall php, cukup mengetikkan command dibawah ini :<br><br>
 	<b>sudo apt-get install -y nginx</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
-	![5](/image/3d.jpg)<br>
+	![5](/TUGAS 1/images/3d.jpg)<br>
 setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-laravel.git pada folder yang sama dengan vagrantfile di   komputer host. Setelah itu sinkronisasi folder pelatihan-laravel host ke vagrant ke /var/www/web dan jangan lupa install vendor laravel agar dapat dijalankan. Setelah itu setting root document nginx ke /var/www/web. webserver VM harus dapat diakses pada port 8080 komputer host dan mysql pada vm dapat diakses pada port 6969 komputer host<br><br>
 
 4. Buat vagrant virtualbox dan lakukan provisioning install:<br>
@@ -89,4 +89,4 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 	unutk menginstall bind9, ketik command berikut :<br>
 	<b>sudo apt-get install -y bind9</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
- 	![6](/image/4a.jpg)
+ 	![6](/TUGAS 1/image/4a.jpg)
