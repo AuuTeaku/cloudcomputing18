@@ -55,7 +55,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 		<b>Mix local.hex</b><br><br>
 	Setelah itu, install Erlang untuk mendapatkan semua paket. Command nya adalah sebagai berikut :<br><br>
 	<b>wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb</b><br>
-	![3](image/2b.jpg) <br>
+	![3](images/2b.jpg) <br>
 	<b>sudo apt-get install -y esl-erlang</b><br>
 	<b>sudo apt-get install -y elixir</b><br><br>
 	b. Setelah berhasil menginstall elixir, untuk memastikan elixir telah terinstall maka silahkan masuk ke virtual machine <b>(vagrant ssh)</b> dan ketik command berikut :<br><br>
@@ -63,7 +63,7 @@ Untuk menjawab semua soal di bawah, kita harus membuat virtual machine. berikut 
 	Akan muncul output seperti gambar berikut :<br>
  	c. akhirnya kita akan menginstall phoenix. Untuk menginstall phoenix, ketikkan command berikut :<br><br>
 		<b>mix archive.install https://github.com/phoenixframework/archieves/raw/master/phx_new.ez</b><br>
- 	![4](images/2c.JPG) <br>
+ 	![4](images/2c.jpg) <br>
 3. Buat vagrant virtualbox dan lakukan provisioning install:<br>
 <b>  a. php</b><br>
 untuk menginstall php, cukup mengetikkan command dibawah ini :<br>
@@ -89,4 +89,4 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 	unutk menginstall bind9, ketik command berikut :<br>
 	<b>sudo apt-get install -y bind9</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
- 	![6](image/4a.jpg)
+ 	![6](images/4a.jpg)
