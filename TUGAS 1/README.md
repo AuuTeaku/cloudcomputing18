@@ -90,3 +90,7 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 	<b>sudo apt-get install -y bind9</b><br><br>
 	hasilnya adalah sebagai berikut :<br>
  	![6](images/4a.jpg)
+
+## Hasil Vagrantfile dan Bootsrap dapat dilihat di
+1. [Vagrantfile](Vagrantfile)
+1. [Bootsrap](bootsrap.sh)
