@@ -9,5 +9,4 @@ jalankan perintah berikut :
 
     docker build -t flask-sample-one ./
 
-*gambar
-
+![1](gambar/1.png)
