@@ -1,8 +1,8 @@
 [Peraturan]
 
-    Laporan harus berupa Markdown.
-    Tata cara pengerjaan silahkan lihat Klik Disini sebagai pedoman bentuk sitematis laporan.
-    Ikui apa yang diminta oleh soal, dan tidak diperbolehkan menginstall atau mensetup config melalui perintah docker exec -ti [ID Container] /bin/bash
+   - Laporan harus berupa Markdown.
+   - Tata cara pengerjaan silahkan lihat Klik Disini sebagai pedoman bentuk sitematis laporan.
+   - Ikui apa yang diminta oleh soal, dan tidak diperbolehkan menginstall atau mensetup config melalui perintah docker exec -ti [ID Container] /bin/bash
 
 # SOAL
 
