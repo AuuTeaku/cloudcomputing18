@@ -93,4 +93,4 @@ setelah melakukan provioning, clone https://github.com/fathoniadi/pelatihan-lara
 
 ## Hasil Vagrantfile dan Bootsrap dapat dilihat di
 1. [Vagrantfile](Vagrantfile)
-1. [Bootsrap](bootsrap.sh)
+1. [Bootstrap](bootstrap.sh)
