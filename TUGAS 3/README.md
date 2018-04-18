@@ -24,7 +24,7 @@ Selain setup environmet mysql, mereka juga mengimport dump database web mereka m
 
 Berikut Laporan yang kami susun :
 
-   1. [Dasar Teori](/dasarteori)
-   1. [Solusi Penyelesaian](/penyelesaian)
-   1. [Kendala dan Error](/kendala)
-   1. [Kesimpulan](/kesimpulan)
+   1. [Dasar Teori](dasarteori)
+   1. [Solusi Penyelesaian](penyelesaian)
+   1. [Kendala dan Error](kendala)
+   1. [Kesimpulan](kesimpulan)
