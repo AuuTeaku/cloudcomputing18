@@ -1,7 +1,7 @@
 ## Berikut langkah-langkahnya:
-### 1. Mendownload file web yang telah disediakan [disini](https://cloud.fathoniadi.my.id/reservasi.zip)
+#### 1. Mendownload file web yang telah disediakan [disini](https://cloud.fathoniadi.my.id/reservasi.zip)
 
-### 2. Untuk menginstall aplikasi Flask dan pendukungnya,
+#### 2. Untuk menginstall aplikasi Flask dan pendukungnya,
 
 buat file [Dockerfile](/Dockerfile)
      
