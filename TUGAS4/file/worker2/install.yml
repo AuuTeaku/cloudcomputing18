@@ -1,0 +1,14 @@
+- hosts: worker
+  tasks:
+    - name: Install git-nginx-curl
+      become: yes
+      apt: name={{ item }} state=latest update_cache=true
+      with_items:
+        - nginx
+        - git
+        - curl
+    - name: Clone git
+      git:
+        dest: "{{ /var/www/laravel }}
+        repo: https://github.com/udinIMM/Hackathon.git
+        force: yes
