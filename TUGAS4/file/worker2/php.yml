@@ -1,0 +1,6 @@
+ - host: worker
+    tasks:
+      - name: PHP | Install PHP 7.2
+        become: yes
+        apt: pkg=php7.2 state=latest
+        tags: ['common']
