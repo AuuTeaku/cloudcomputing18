@@ -90,3 +90,7 @@ gedit install.yml
         error_log /var/log/nginx/{{ worker1 }}_error.log;
         access_log /var/log/nginx/{{ worker1 }}_access.log;
         }  
+        
+- Menjalankan perintah berikut:
+
+        ansible-playbook -i hosts install.yml -k
